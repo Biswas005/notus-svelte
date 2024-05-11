@@ -77,9 +77,19 @@ module.exports = {
       backgroundSize: {
         full: "100%",
       },
+      backdropFilter: {
+        'none': 'none',
+        'blur': 'blur(20px)',
+      },
     },
   },
-  variants: [
+  variants: {
+    extend: {
+      backdropFilter: ['responsive'], // add other variants as needed
+    },
+  },
+  variants: 
+  [
     "responsive",
     "group-hover",
     "focus-within",
@@ -94,6 +104,7 @@ module.exports = {
     "disabled",
   ],
   plugins: [
+    require('tailwindcss-filters'),
     require("@tailwindcss/forms"),
     plugin(function ({ addComponents, theme }) {
       const screens = theme("screens", {});

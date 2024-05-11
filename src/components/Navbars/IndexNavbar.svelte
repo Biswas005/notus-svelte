@@ -12,13 +12,13 @@
 </script>
 
 <nav
-  class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
+  class="sticky top-0 z-10 bg-white shadow-lg border-b border-blueGray-200 py-2  backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200"
 >
   <div
-    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    class="max-w-5xl mx-auto px-4"
   >
     <div
-      class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+      class="flex items-center justify-between h-16"
     >
       <a
         use:link
